@@ -1,10 +1,10 @@
 import { StrictMode } from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const renderRoot = async () => {
+async function renderRoot() {
   if (import.meta.env.DEV) {
     const { worker } = await import('./__mocks__/msw/browser');
     worker.start();
@@ -16,7 +16,7 @@ const renderRoot = async () => {
     </StrictMode>
   );
 
-  ReactDOM.render(RootComponent, document.getElementById('root'));
+  render(RootComponent, document.getElementById('root'));
 }
 
 renderRoot();
