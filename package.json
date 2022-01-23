@@ -2,11 +2,23 @@
   "name": "@samhwang/vite-react-starter-template",
   "version": "0.0.0",
   "private": true,
+  "msw": {
+    "workerDirectory": "public"
+  },
   "scripts": {
+    "prepare": "husky install",
     "dev": "vite",
-    "build": "tsc && vite build",
+    "prebuild": "rimraf dist",
+    "build:only": "vite build",
+    "typecheck": "tsc",
+    "build": "npm run typecheck && npm run build:only",
     "preview": "vite preview",
-    "prepare": "husky install"
+    "pretest": "rimraf coverage",
+    "test": "jest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier -w src",
+    "format": "npm run lint:fix && npm run prettier"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -32,7 +44,9 @@
     "husky": "^7.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.4.7",
+    "jest-extended": "^1.2.0",
     "lint-staged": "^12.2.2",
+    "msw": "^0.36.5",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^27.1.3",

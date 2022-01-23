@@ -3,3 +3,9 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# Eslint
+.eslintcache
+
+# Test Coverage
+coverage
