@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 async function renderRoot() {
   if (import.meta.env.DEV) {
     const { worker } = await import('./__mocks__/msw/browser');
-    worker.start();
+    await worker.start();
   }
 
   const RootComponent = (
