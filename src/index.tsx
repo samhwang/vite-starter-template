@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -16,7 +16,9 @@ async function renderRoot() {
     </StrictMode>
   );
 
-  render(RootComponent, document.getElementById('root'));
+  const rootElement = document.getElementById('root') as HTMLElement;
+  const root = createRoot(rootElement);
+  root.render(RootComponent);
 }
 
 renderRoot();

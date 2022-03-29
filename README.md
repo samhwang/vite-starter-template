@@ -53,7 +53,7 @@ See the section about [deployment](https://vitejs.dev/guide/static-deploy.html) 
 - [Jest](https://jestjs.io/), extended with [ts-jest](https://kulshekhar.github.io/ts-jest/) and [jest-extended](https://github.com/jest-community/jest-extended)
   for running unit tests.
 - [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
-- [husky]() and [lint-staged]() to set up pre-commit hooks.
+- [husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) to set up pre-commit hooks.
 
 ## Learn More
 
