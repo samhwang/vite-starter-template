@@ -11,6 +11,10 @@ There are 3 ways that you can adopt this template.
 - Clone this repo, delete the .git folder and re-init the Git tree.
 - Use `degit`: `npx degit samhwang/vite-starter-template project-name`
 
+## Side note
+
+This template assumes you're using `npm` as your installer and script runner. Feel free to sub it with `pnpm` or `yarn` as you wish.
+
 ## Available Scripts
 
 In the project directory, you can run:
