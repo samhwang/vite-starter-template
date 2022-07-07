@@ -1,7 +1,24 @@
-import type { Config } from '@jest/types';
-
-const baseConfig: Config.InitialOptions = {
-  preset: 'ts-jest',
+/** @type {import('@jest/types').Config.InitialOptions} */
+const config = {
+  transform: {
+    '^.+\\.(t|j)sx?$': [
+      '@swc/jest',
+      {
+        sourceMaps: true,
+        jsc: {
+          parser: {
+            syntax: 'typescript',
+            tsx: true,
+          },
+          transform: {
+            react: {
+              runtime: 'automatic',
+            },
+          },
+        },
+      },
+    ],
+  },
   verbose: true,
   collectCoverage: true,
   testPathIgnorePatterns: ['dist'],
@@ -16,4 +33,4 @@ const baseConfig: Config.InitialOptions = {
   },
 };
 
-export default baseConfig;
+module.exports = config;

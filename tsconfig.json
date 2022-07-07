@@ -16,7 +16,7 @@
     "isolatedModules": false,
     "noEmit": true
   },
-  "include": ["./src"],
+  "include": ["./src", "jest.config.*"],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
