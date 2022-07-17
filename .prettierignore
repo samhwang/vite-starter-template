@@ -1,6 +1,7 @@
 package.json
 package-lock.json
 yarn.lock
+pnpm-lock.yaml
 dist
 coverage
 *.d.ts
