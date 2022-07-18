@@ -54,8 +54,7 @@ See the section about [deployment](https://vitejs.dev/guide/static-deploy.html) 
 - [TypeScript](https://www.typescriptlang.org/) - For static type checking
 - [ESLint](https://eslint.org/) using the [AirBnB ruleset](https://github.com/airbnb/javascript) and [Prettier](https://prettier.io/)
   for code formatting.
-- [Jest](https://jestjs.io/), extended with [ts-jest](https://kulshekhar.github.io/ts-jest/) and [jest-extended](https://github.com/jest-community/jest-extended)
-  for running unit tests.
+- [Vitest](https://vitest.dev/) for running unit tests.
 - [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
 - [husky](https://typicode.github.io/husky/) and [lint-staged](https://github.com/okonet/lint-staged) to set up pre-commit hooks.
 
