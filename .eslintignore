@@ -3,3 +3,6 @@ coverage
 node_modules
 *.d.ts
 *.config.ts
+
+# Ignoring generated files
+public/mockServiceWorker.js

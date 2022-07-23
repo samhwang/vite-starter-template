@@ -9,7 +9,7 @@
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "import", "prettier"],
+  "plugins": ["@typescript-eslint", "import"],
   "rules": {
     "default-case": "off",
     "import/extensions": ["error", "never"],
@@ -19,7 +19,6 @@
     "no-use-before-define": ["error", "nofunc"],
     "import/prefer-default-export": "off",
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off",
-    "prettier/prettier": "error"
+    "react/react-in-jsx-scope": "off"
   }
 }

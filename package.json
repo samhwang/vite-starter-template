@@ -15,9 +15,9 @@
     "preview": "vite preview",
     "pretest": "rimraf coverage",
     "test": "vitest",
-    "lint": "eslint . --ext .ts,.tsx",
+    "lint": "eslint --cache .",
     "lint:fix": "npm run lint -- --fix",
-    "prettier": "prettier -w .",
+    "prettier": "prettier --cache --write .",
     "format": "npm run lint:fix && npm run prettier"
   },
   "dependencies": {
@@ -43,7 +43,6 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "happy-dom": "^6.0.4",
