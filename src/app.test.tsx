@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
-import App from './App';
+import App from './app';
 
 describe('App component', () => {
   it('renders learn React link and the state number button', () => {
