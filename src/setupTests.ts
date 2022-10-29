@@ -1,15 +1,11 @@
-import matchers, {
-  TestingLibraryMatchers,
-} from '@testing-library/jest-dom/matchers';
+import matchers, { TestingLibraryMatchers } from '@testing-library/jest-dom/matchers';
 import { cleanup } from '@testing-library/react';
 import { beforeAll, afterAll, afterEach, expect } from 'vitest';
 import { server } from './__mocks__/msw/server';
 
 declare global {
   namespace Vi {
-    interface JestAssertion<T = any>
-      extends jest.Matchers<void, T>,
-        TestingLibraryMatchers<T, void> {}
+    interface JestAssertion<T = any> extends jest.Matchers<void, T>, TestingLibraryMatchers<T, void> {}
   }
 }
 
