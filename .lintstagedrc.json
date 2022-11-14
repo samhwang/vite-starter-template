@@ -1,3 +1,0 @@
-{
-  "*.{ts,tsx}": ["eslint --cache --fix", "prettier --cache --write"]
-}
