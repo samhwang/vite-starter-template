@@ -14,6 +14,7 @@ There are 3 ways that you can adopt this template.
 ## Batteries included
 
 - [Vite](https://vitejs.dev/), [React](https://reactjs.org) and [TypeScript](https://www.typescriptlang.org/) - The core of this template.
+- [swc](https://swc.rs/) - A speedy JS bundler using Rust.
 - [ESLint](https://eslint.org/) using the [AirBnB ruleset](https://github.com/airbnb/javascript) and [Prettier](https://prettier.io/)
   for code formatting.
 - [Vitest](https://vitest.dev/) for running unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
@@ -23,6 +24,7 @@ There are 3 ways that you can adopt this template.
 ## Side note
 
 - **`pnpm` by default**: This template assumes you're using `pnpm` as your installer and script runner. Feel free to sub it with `npm` or `yarn` as you wish.
+- **`swc` by default**: This template will enable `swc` by default. But there are some caveats (https://github.com/vitejs/vite-plugin-react-swc#caveats). If your project breaks in some way, you can toggle it off in `vite.config.ts`.
 
 ## Available Scripts
 
