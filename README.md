@@ -44,9 +44,15 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-See the section about [deployment](https://vitejs.dev/guide/static-deploy.html) for more information.
+## Deployment
 
-## What this template includes
+This template includes some [GitHub Actions](https://github.com/features/actions) pipeline to deploy into [GitHub Pages](https://pages.github.com/).
+
+To configure this, first [enable GH Actions in your repo](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) then [configure publishing from an Action workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
+If you don't want to use GitHub Pages, feel free to delete the `.github` folder, and see the [deployment](https://vitejs.dev/guide/static-deploy.html) section on Vite Docs
+for more information.
+
+## Batteries included
 
 - [Vite](https://vitejs.dev/) and [React](https://reactjs.org) - The core of this template.
 - [TypeScript](https://www.typescriptlang.org/) - For static type checking
@@ -54,6 +60,7 @@ See the section about [deployment](https://vitejs.dev/guide/static-deploy.html) 
   for code formatting.
 - [Vitest](https://vitest.dev/) for running unit tests.
 - [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
+- [GitHub Actions](https://github.com/features/actions) pipeline to deploy into [GitHub Pages](https://pages.github.com/).
 
 ## Learn More
 
