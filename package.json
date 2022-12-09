@@ -9,16 +9,17 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "rimraf dist",
-    "build:only": "vite build",
-    "typecheck": "tsc",
-    "build": "npm run typecheck && npm run build:only",
+    "build": "rimraf dist && vite build",
     "preview": "vite preview",
     "pretest": "rimraf coverage",
-    "test": "vitest",
+    "typecheck": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "test:CI": "pnpm run test && pnpm run typecheck",
     "lint": "eslint --cache .",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "pnpm run lint --fix",
     "prettier": "prettier --cache --write .",
-    "format": "npm run lint:fix && npm run prettier"
+    "format": "pnpm run lint:fix && pnpm run prettier"
   },
   "dependencies": {
     "react": "^18.2.0",
