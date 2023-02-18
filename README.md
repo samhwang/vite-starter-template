@@ -14,6 +14,8 @@ There are 3 ways that you can adopt this template.
 ## Batteries included
 
 - [Vite](https://vitejs.dev/), [React](https://reactjs.org) and [TypeScript](https://www.typescriptlang.org/) - The core of this template.
+- [React Router](https://reactrouter.com/) - To handle app client side routing
+- [React Hook Form](https://react-hook-form.com/) - To handle form creation and validation.
 - [swc](https://swc.rs/) - A speedy JS bundler using Rust.
 - [ESLint](https://eslint.org/) using the [AirBnB ruleset](https://github.com/airbnb/javascript) and [Prettier](https://prettier.io/)
   for code formatting.

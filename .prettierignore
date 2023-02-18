@@ -8,3 +8,4 @@ coverage
 
 # Ignoring generated files
 public/mockServiceWorker.js
+.vitest-preview

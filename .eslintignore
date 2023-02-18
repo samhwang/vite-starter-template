@@ -6,3 +6,4 @@ node_modules
 
 # Ignoring generated files
 public/mockServiceWorker.js
+.vitest-preview

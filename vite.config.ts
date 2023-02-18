@@ -13,6 +13,7 @@ const react = useSwc ? reactSwc : reactBabel;
 export default defineConfig({
   plugins: [react()],
   test: {
+    css: true,
     globals: true,
     environment: 'jsdom',
     setupFiles: ['src/setupTests.ts'],
