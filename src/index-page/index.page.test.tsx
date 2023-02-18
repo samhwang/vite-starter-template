@@ -1,10 +1,10 @@
 import { describe, it, expect } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import App from './app';
+import IndexPage from './index.page';
 
-describe('App component', () => {
+describe('Index Page', () => {
   it('increase the state number button when click', () => {
-    render(<App />);
+    render(<IndexPage />);
     const hiText = screen.getByText(/Hi/i);
     expect(hiText).toBeInTheDocument();
   });

@@ -1,7 +1,15 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './app';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import IndexPage from './index-page/index.page';
 import reportWebVitals from './reportWebVitals';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <IndexPage />,
+  },
+]);
 
 async function renderRoot() {
   if (import.meta.env.DEV) {
@@ -11,7 +19,7 @@ async function renderRoot() {
 
   const RootComponent = (
     <StrictMode>
-      <App />
+      <RouterProvider router={router} />;
     </StrictMode>
   );
 
