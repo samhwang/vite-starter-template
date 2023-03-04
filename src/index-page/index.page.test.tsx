@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import IndexPage from './index.page';
 
 describe('Index Page', () => {
-  it('increase the state number button when click', () => {
+  it('should render Hi text', () => {
     render(<IndexPage />);
     const hiText = screen.getByText(/Hi/i);
     expect(hiText).toBeInTheDocument();
