@@ -1,14 +1,10 @@
 {
   "root": true,
-  "env": {
-    "es6": true,
-    "node": true
-  },
   "extends": ["airbnb", "airbnb/hooks", "airbnb-typescript", "prettier"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-  "plugins": ["@typescript-eslint", "import"],
+  "plugins": [],
   "rules": {
     "default-case": "off",
     "import/extensions": ["error", "never"],
