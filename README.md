@@ -29,32 +29,12 @@ There are 3 ways that you can adopt this template.
 
 ## Available Scripts
 
-In the project directory, you can run:
-
-### `pnpm run dev`
-
-Runs the app in the development mode.
-
-The page will reload when you make changes.
-You may also see any lint errors in the console.
-
-### `pnpm run test`
-
-Launches the test runner for unit testing with React Testing Library.
-For more information, go to [RTL docs](https://testing-library.com/docs/react-testing-library/intro/)
-
-### `pnpm run format`
-
-Launches the ESLint and Prettier runner to lint the code against AirBnb ruleset and reformat it
-with Prettier.
-
-### `pnpm run build`
-
-Builds the app for production to the `dist` folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+```shell
+pnpm run dev
+pnpm run test
+pnpm run format
+pnpm run build
+```
 
 ## Deployment
 
@@ -67,3 +47,5 @@ rest.
 You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn React testing, go to [RTL docs](https://testing-library.com/docs/react-testing-library/intro/)
