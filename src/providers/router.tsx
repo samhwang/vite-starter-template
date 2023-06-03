@@ -9,5 +9,5 @@ const router = createBrowserRouter([
 ]);
 
 export default function RouterProvider() {
-  return <RRProvider router={router} />
+  return <RRProvider router={router} />;
 }
