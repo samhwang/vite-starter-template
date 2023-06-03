@@ -20,12 +20,12 @@ There are 3 ways that you can adopt this template.
 - [Rome](https://https://rome.tools/) for code formatting.
 - [Vitest](https://vitest.dev/) for running unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 - [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
-- [GitHub Actions](https://github.com/features/actions) pipeline to deploy into [GitHub Pages](https://pages.github.com/).
+- [Netlify](https://netlify.com) hosting config
 
 ## Side note
 
 - **`pnpm` by default**: This template assumes you're using `pnpm` as your installer and script runner. Feel free to sub it with `npm` or `yarn` as you wish.
-- **`swc` by default**: This template will enable `swc` by default. But there are some caveats (https://github.com/vitejs/vite-plugin-react-swc#caveats). If your project breaks in some way, you can toggle it off in `vite.config.ts`.
+- **`swc` by default**: This template will enable `swc` by default. But there are some [caveats](https://github.com/vitejs/vite-plugin-react-swc#caveats). If your project breaks in some way, you can toggle it off in `vite.config.ts`.
 
 ## Available Scripts
 
@@ -58,11 +58,9 @@ Your app is ready to be deployed!
 
 ## Deployment
 
-This template includes some [GitHub Actions](https://github.com/features/actions) pipeline to deploy into [GitHub Pages](https://pages.github.com/).
-
-To configure this, first [enable GH Actions in your repo](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository) then [configure publishing from an Action workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-with-a-custom-github-actions-workflow).
-If you don't want to use GitHub Pages, feel free to delete the `.github` folder, and see the [deployment](https://vitejs.dev/guide/static-deploy.html) section on Vite Docs
-for more information.
+This template includes some config to deploy into [Netlify](https://netlify.com). To configure,
+link your Github account to Netlify and link your project into it, they will take care of the
+rest.
 
 ## Learn More
 
