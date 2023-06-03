@@ -18,11 +18,11 @@
     "test:watch": "vitest watch",
     "test:CI": "pnpm run test && pnpm run typecheck",
     "test:preview": "vitest-preview",
-    "lint": "rome check ./src/*",
-    "lint:fix": "rome check --apply ./src/**",
-    "lint:fix:unsafe": "rome check --apply-unsafe ./src/**",
-    "format": "rome format --write ./src/**/*.ts ./src/**/*.tsx",
-    "ci": "rome ci ./src/**/*.ts ./src/**/*.tsx"
+    "lint": "rome check ./src/**/*.tsx",
+    "lint:fix": "rome check --apply ./src/**/*.tsx",
+    "lint:fix:unsafe": "rome check --apply-unsafe ./src/**/*.tsx",
+    "format": "rome format --write ./src/**/*.tsx",
+    "ci": "rome ci ./src/**/*.tsx"
   },
   "dependencies": {
     "react": "^18.2.0",
