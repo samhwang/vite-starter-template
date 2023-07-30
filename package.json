@@ -1,11 +1,16 @@
 {
   "name": "@samhwang/vite-react-starter-template",
-  "version": "0.0.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "Vite + React + Netlify Starter Template",
   "msw": {
     "workerDirectory": "public"
   },
   "type": "module",
+  "engines": {
+    "node": "^20.0.0",
+    "pnpm": "^8.0.0"
+  },
+  "packageManager": "pnpm@8.6.10",
   "scripts": {
     "postinstall": "msw init public",
     "dev": "vite",
