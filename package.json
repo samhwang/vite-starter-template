@@ -14,6 +14,7 @@
   "scripts": {
     "postinstall": "msw init public",
     "dev": "vite",
+    "netlify": "netlify dev",
     "prebuild": "rimraf dist",
     "build": "rimraf dist && vite build",
     "preview": "vite preview",
@@ -51,6 +52,7 @@
     "@vitest/ui": "^0.33.0",
     "jsdom": "^22.1.0",
     "msw": "^1.2.3",
+    "netlify-cli": "^15.9.1",
     "rimraf": "^5.0.1",
     "rome": "^12.1.3",
     "tsx": "^3.12.7",

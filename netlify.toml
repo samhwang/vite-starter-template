@@ -1,4 +1,5 @@
 [build]
+  framework = "vite"
   publish = "dist/"
   command = "pnpm run ci && pnpm run test && pnpm run build"
 
@@ -6,3 +7,7 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[dev]
+  autoLaunch = false
+  targetPort = 5173
