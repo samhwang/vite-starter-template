@@ -12,7 +12,7 @@
   },
   "packageManager": "pnpm@8.6.10",
   "scripts": {
-    "postinstall": "msw init public",
+    "msw:init": "msw init public",
     "dev": "vite",
     "netlify": "netlify dev",
     "prebuild": "rimraf dist",
