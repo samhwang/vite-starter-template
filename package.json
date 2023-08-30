@@ -22,11 +22,11 @@
     "test:watch": "vitest watch",
     "test:CI": "pnpm run test && pnpm run typecheck",
     "test:preview": "vitest-preview",
-    "lint": "rome check ./src/**/*.tsx",
-    "lint:fix": "rome check --apply ./src/**/*.tsx",
-    "lint:fix:unsafe": "rome check --apply-unsafe ./src/**/*.tsx",
-    "format": "rome format --write ./src/**/*.tsx",
-    "ci": "rome ci ./src/**/*.tsx"
+    "lint": "biome check ./src/**/*.tsx",
+    "lint:fix": "biome check --apply ./src/**/*.tsx",
+    "lint:fix:unsafe": "biome check --apply-unsafe ./src/**/*.tsx",
+    "format": "biome format --write ./src/**/*.tsx",
+    "ci": "biome ci ./src/**/*.tsx"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -36,6 +36,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.0.0",
     "@testing-library/dom": "^9.3.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^14.0.0",
@@ -51,7 +52,6 @@
     "jsdom": "^22.1.0",
     "msw": "^1.2.3",
     "netlify-cli": "^15.9.1",
-    "rome": "^12.1.3",
     "tsx": "^3.12.7",
     "typescript": "^5.1.6",
     "vite": "^4.4.7",
