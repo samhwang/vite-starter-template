@@ -1,8 +1,8 @@
-import { rest } from 'msw';
+import { http } from 'msw';
 
 export const handlers = [
-  rest.get('/test', (req, res, ctx) => {
-    console.log({ req, res, ctx });
-    return res(ctx.status(200));
+  http.get('/test', ({ request, params, cookies }) => {
+    console.log({ request, params, cookies });
+    return new Response(null, { status: 200 })
   }),
 ];

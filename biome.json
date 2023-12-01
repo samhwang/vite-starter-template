@@ -14,7 +14,7 @@
     "enabled": true,
     "formatWithErrors": false,
     "indentStyle": "space",
-    "indentSize": 2,
+    "indentWidth": 2,
     "lineWidth": 160,
     "ignore": ["node_modules", "src/**/__snapshots__"]
   },
