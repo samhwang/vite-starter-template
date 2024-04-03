@@ -1,6 +1,6 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import RouterProvider from './providers/router';
+import App from './app';
 
 async function renderRoot() {
   if (import.meta.env.DEV) {
@@ -10,7 +10,7 @@ async function renderRoot() {
 
   const RootComponent = (
     <StrictMode>
-      <RouterProvider />
+      <App />
     </StrictMode>
   );
 

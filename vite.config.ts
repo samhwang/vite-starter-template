@@ -2,6 +2,7 @@
 /// <reference types="vite/client" />
 
 import { defineConfig } from 'vite';
+import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
 import reactBabel from '@vitejs/plugin-react';
 import reactSwc from '@vitejs/plugin-react-swc';
 
@@ -12,7 +13,7 @@ const react = useSwc ? reactSwc : reactBabel;
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), TanStackRouterVite()],
   test: {
     css: true,
     globals: true,
@@ -22,5 +23,8 @@ export default defineConfig({
       provider: 'v8',
       enabled: true,
     },
+    typecheck: {
+      enabled: true,
+    }
   },
 });

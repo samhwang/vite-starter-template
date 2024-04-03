@@ -3,6 +3,9 @@
   "organizeImports": {
     "enabled": true
   },
+  "files": {
+    "ignore": ["src/routeTree.gen.ts"]
+  },
   "linter": {
     "enabled": true,
     "ignore": ["node_modules", "src/**/__snapshots__"],
