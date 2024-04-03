@@ -12,28 +12,43 @@
   },
   "packageManager": "pnpm@8.15.1",
   "scripts": {
+    "prepare": "npm run githooks:init && npm run msw:init",
+    "githooks:init": "simple-git-hooks",
     "msw:init": "msw init public",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc",
-    "test": "vitest run",
+    "test": "vitest",
+    "test:run": "vitest run",
     "test:watch": "vitest watch",
     "test:CI": "pnpm run test && pnpm run typecheck",
     "test:preview": "vitest-preview",
     "lint": "biome check ./src/**/*.tsx",
-    "lint:fix": "biome check --apply ./src/**/*.tsx",
-    "lint:fix:unsafe": "biome check --apply-unsafe ./src/**/*.tsx",
-    "format": "biome format --write ./src/**/*.tsx",
-    "ci": "biome ci ./src/**/*.tsx"
+    "lint:fix": "biome check --apply ./src/**",
+    "lint:fix:unsafe": "biome check --apply-unsafe ./src/**",
+    "format": "biome format --write ./src/**",
+    "ci": "biome ci ./src/**"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "pre-push": "npm run ci && npm run test:run"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "biome check --apply",
+      "biome format --write"
+    ]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
     "@tanstack/react-router": "^1.16.6",
     "@tanstack/router-devtools": "^1.16.6",
+    "lint-staged": "^15.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.50.1",
+    "simple-git-hooks": "^2.11.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
