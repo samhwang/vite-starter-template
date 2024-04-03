@@ -3,16 +3,16 @@
   "version": "1.0.0",
   "description": "Vite + React Starter Template",
   "msw": {
-    "workerDirectory": "public"
+    "workerDirectory": ["public"]
   },
   "type": "module",
   "engines": {
     "node": "^20.0.0",
     "pnpm": "^8.0.0"
   },
-  "packageManager": "pnpm@8.15.1",
+  "packageManager": "pnpm@8.15.6",
   "scripts": {
-    "prepare": "npm run githooks:init && npm run msw:init",
+    "prepare": "npm run githooks:init",
     "githooks:init": "simple-git-hooks",
     "msw:init": "msw init public",
     "dev": "vite",
@@ -42,36 +42,36 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
-    "@tanstack/react-router": "^1.16.6",
-    "@tanstack/router-devtools": "^1.16.6",
+    "@tanstack/react-router": "^1.26.7",
+    "@tanstack/router-devtools": "^1.26.7",
     "lint-staged": "^15.2.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.50.1",
+    "react-hook-form": "^7.51.2",
     "simple-git-hooks": "^2.11.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "@tanstack/router-cli": "^1.16.1",
-    "@tanstack/router-vite-plugin": "^1.16.1",
+    "@biomejs/biome": "^1.6.4",
+    "@tanstack/router-cli": "^1.23.0",
+    "@tanstack/router-vite-plugin": "^1.26.8",
     "@testing-library/dom": "^9.3.4",
     "@testing-library/jest-dom": "^6.4.2",
-    "@testing-library/react": "^14.2.1",
+    "@testing-library/react": "^14.2.2",
     "@testing-library/user-event": "^14.5.2",
-    "@types/node": "^20.11.17",
-    "@types/react": "^18.2.55",
-    "@types/react-dom": "^18.2.19",
+    "@types/node": "^20.12.4",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-react-swc": "^3.6.0",
-    "@vitest/coverage-v8": "^1.2.2",
-    "@vitest/ui": "^1.2.2",
+    "@vitest/coverage-v8": "^1.4.0",
+    "@vitest/ui": "^1.4.0",
     "jsdom": "^24.0.0",
-    "msw": "^2.1.7",
+    "msw": "^2.2.13",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3",
-    "vite": "^5.1.1",
-    "vitest": "^1.2.2",
+    "typescript": "^5.4.3",
+    "vite": "^5.2.8",
+    "vitest": "^1.4.0",
     "vitest-preview": "^0.0.1"
   }
 }
