@@ -1,7 +1,7 @@
 {
   "name": "@samhwang/vite-react-starter-template",
   "version": "1.0.0",
-  "description": "Vite + React + Netlify Starter Template",
+  "description": "Vite + React Starter Template",
   "msw": {
     "workerDirectory": "public"
   },
@@ -14,7 +14,6 @@
   "scripts": {
     "msw:init": "msw init public",
     "dev": "vite",
-    "netlify": "netlify dev",
     "build": "vite build",
     "preview": "vite preview",
     "typecheck": "tsc",
@@ -51,7 +50,6 @@
     "@vitest/ui": "^1.2.2",
     "jsdom": "^24.0.0",
     "msw": "^2.1.7",
-    "netlify-cli": "^17.16.1",
     "tsx": "^4.7.1",
     "typescript": "^5.3.3",
     "vite": "^5.1.1",

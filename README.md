@@ -20,7 +20,6 @@ There are 3 ways that you can adopt this template.
 - [Biome](https://biomejs.dev/) for code formatting.
 - [Vitest](https://vitest.dev/) for running unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 - [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
-- [Netlify](https://netlify.com) hosting config
 
 ## Side note
 
@@ -38,9 +37,7 @@ pnpm run build
 
 ## Deployment
 
-This template includes some config to deploy into [Netlify](https://netlify.com). To configure,
-link your Github account to Netlify and link your project into it, they will take care of the
-rest.
+This template is assumed to be hosting provider agnostic. Please read the [Vite documentation on how to deploy your app](https://vitejs.dev/guide/static-deploy).
 
 ## Learn More
 
