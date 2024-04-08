@@ -12,7 +12,7 @@
   },
   "packageManager": "pnpm@8.15.6",
   "scripts": {
-    "prepare": "npm run githooks:init",
+    "prepare": "pnpm run githooks:init",
     "githooks:init": "simple-git-hooks",
     "msw:init": "msw init public",
     "dev": "vite",
@@ -32,7 +32,7 @@
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
-    "pre-push": "npm run ci && npm run test:run"
+    "pre-push": "pnpm run ci && pnpm run test:run"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
