@@ -13,7 +13,7 @@
   "packageManager": "pnpm@8.15.6",
   "scripts": {
     "prepare": "pnpm run githooks:init",
-    "githooks:init": "simple-git-hooks",
+    "githooks:init": "husky",
     "msw:init": "msw init public --save",
     "dev": "vite",
     "build": "vite build",
@@ -30,13 +30,6 @@
     "format": "biome format --write .",
     "ci": "biome ci ."
   },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged",
-    "pre-push": "pnpm run ci && pnpm run test:run"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": ["biome check --apply", "biome format --write"]
-  },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
     "@tanstack/react-router": "^1.26.16",
@@ -45,7 +38,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.51.2",
-    "simple-git-hooks": "^2.11.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
@@ -62,6 +54,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.4.0",
     "@vitest/ui": "^1.4.0",
+    "husky": "^9.0.11",
     "jsdom": "^24.0.0",
     "msw": "^2.2.13",
     "tsx": "^4.7.2",
