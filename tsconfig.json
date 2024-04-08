@@ -21,7 +21,7 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./src"],
+  "include": ["./src", "./__mocks__"],
   "exclude": ["node_modules", "dist"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
