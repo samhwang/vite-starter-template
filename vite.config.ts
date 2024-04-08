@@ -16,6 +16,8 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       enabled: true,
+      include: ['src/**/*'],
+      exclude: ['src/routeTree.gen.ts'],
     },
     typecheck: {
       enabled: true,
