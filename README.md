@@ -14,9 +14,8 @@ There are 3 ways that you can adopt this template.
 ## Batteries included
 
 - [Vite](https://vitejs.dev/), [React](https://reactjs.org) and [TypeScript](https://www.typescriptlang.org/) - The core of this template.
-- [React Router](https://reactrouter.com/) - To handle app client side routing
+- [Tanstack Router](https://tanstack.com/router/) - To handle app client side routing
 - [React Hook Form](https://react-hook-form.com/) - To handle form creation and validation.
-- [swc](https://swc.rs/) - A speedy JS bundler using Rust.
 - [Biome](https://biomejs.dev/) for code formatting.
 - [Vitest](https://vitest.dev/) for running unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
 - [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
@@ -24,7 +23,6 @@ There are 3 ways that you can adopt this template.
 ## Side note
 
 - **`pnpm` by default**: This template assumes you're using `pnpm` as your installer and script runner. Feel free to sub it with `npm` or `yarn` as you wish.
-- **`swc` by default**: This template will enable `swc` by default. But there are some [caveats](https://github.com/vitejs/vite-plugin-react-swc#caveats). If your project breaks in some way, you can toggle it off in `vite.config.ts`.
 
 ## Available Scripts
 

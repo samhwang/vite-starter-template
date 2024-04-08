@@ -2,14 +2,8 @@
 /// <reference types="vite/client" />
 
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
-import reactBabel from '@vitejs/plugin-react';
-import reactSwc from '@vitejs/plugin-react-swc';
+import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
-
-// TOGGLE THIS IF YOU SEE STRANGE BEHAVIOR IN YOUR APP.
-// See README of plugin-react-swc: https://github.com/vitejs/vite-plugin-react-swc
-const useSwc = true;
-const react = useSwc ? reactSwc : reactBabel;
 
 // https://vitejs.dev/config/
 export default defineConfig({
