@@ -35,10 +35,7 @@
     "pre-push": "pnpm run ci && pnpm run test:run"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "biome check --apply",
-      "biome format --write"
-    ]
+    "*.{js,jsx,ts,tsx}": ["biome check --apply", "biome format --write"]
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",

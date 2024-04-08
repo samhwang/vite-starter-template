@@ -1,10 +1,10 @@
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
-import { defineConfig } from 'vite';
 import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
 import reactBabel from '@vitejs/plugin-react';
 import reactSwc from '@vitejs/plugin-react-swc';
+import { defineConfig } from 'vite';
 
 // TOGGLE THIS IF YOU SEE STRANGE BEHAVIOR IN YOUR APP.
 // See README of plugin-react-swc: https://github.com/vitejs/vite-plugin-react-swc
@@ -25,6 +25,6 @@ export default defineConfig({
     },
     typecheck: {
       enabled: true,
-    }
+    },
   },
 });
