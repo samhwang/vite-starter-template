@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Vite + React Starter Template",
   "msw": {
-    "workerDirectory": [
-      "public"
-    ]
+    "workerDirectory": ["public"]
   },
   "type": "module",
   "engines": {
