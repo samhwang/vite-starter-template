@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "Vite + React Starter Template",
   "msw": {
-    "workerDirectory": ["public"]
+    "workerDirectory": [
+      "public"
+    ]
   },
   "type": "module",
   "engines": {
-    "node": "^20.0.0",
+    "node": "^22.0.0",
     "pnpm": "^9.0.0"
   },
   "packageManager": "pnpm@9.12.3",
@@ -48,7 +50,7 @@
     "@testing-library/jest-dom": "^6.6.2",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
-    "@types/node": "^20.17.4",
+    "@types/node": "^22.8.5",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
