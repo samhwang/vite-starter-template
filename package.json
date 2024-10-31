@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "Vite + React Starter Template",
   "msw": {
-    "workerDirectory": [
-      "public"
-    ]
+    "workerDirectory": ["public"]
   },
   "type": "module",
   "engines": {
@@ -57,7 +55,7 @@
     "@vitest/coverage-v8": "^2.1.4",
     "@vitest/ui": "^2.1.4",
     "husky": "^9.1.6",
-    "jsdom": "^24.1.3",
+    "jsdom": "^25.0.0",
     "msw": "^2.6.0",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
