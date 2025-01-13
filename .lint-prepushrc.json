@@ -1,0 +1,8 @@
+{
+  "base": "master",
+  "verbose": true,
+  "tasks": {
+    "*": ["biome ci --no-errors-on-unmatched"],
+    "*.[js,jsx,ts,tsx]": ["tsc", "vitest run"]
+  }
+}

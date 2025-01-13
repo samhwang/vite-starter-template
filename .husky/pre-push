@@ -1,3 +1,1 @@
-pnpm run ci
-pnpm run test:run
-pnpm run typecheck
+npx lint-prepush
