@@ -13,16 +13,19 @@ There are 3 ways that you can adopt this template.
 
 ## Batteries included
 
-- [Vite](https://vitejs.dev/), [React](https://reactjs.org) and [TypeScript](https://www.typescriptlang.org/) - The core of this template.
+### Runtime:
+
+- [React](https://reactjs.org) and [TypeScript](https://www.typescriptlang.org/) - The library for web and native user interfaces.
 - [Tanstack Router](https://tanstack.com/router/) - To handle app client side routing
-- [React Hook Form](https://react-hook-form.com/) - To handle form creation and validation.
-- [Biome](https://biomejs.dev/) for code formatting.
-- [Vitest](https://vitest.dev/) for running unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
-- [msw](https://mswjs.io/) to fake a service worker request to intercept API calls.
+- [Tanstack Form](https://tanstack.com/form/) - To handle form creation and validation.
 
-## Side note
+### Dev tools:
 
-- **`pnpm` by default**: This template assumes you're using `pnpm` as your installer and script runner. Feel free to sub it with `npm` or `yarn` as you wish.
+- [pnpm](https://pnpm.io) - Fast, disk space efficient package manager.
+- [Biome](https://biomejs.dev/) for code linting and formatting.
+- [Vite](https://vitejs.dev/) - The blazing fast frontend build tool.
+- [Vitest](https://vitest.dev/) for running unit tests with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/),
+using [msw](https://mswjs.io/) to fake a service worker request to intercept API calls during testing..
 
 ## Available Scripts
 
