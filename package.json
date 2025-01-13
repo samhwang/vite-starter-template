@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Vite + React Starter Template",
   "msw": {
-    "workerDirectory": ["public"]
+    "workerDirectory": [
+      "public"
+    ]
   },
   "type": "module",
   "engines": {
@@ -31,13 +33,13 @@
     "ci": "biome ci ."
   },
   "dependencies": {
-    "@hookform/resolvers": "^3.9.1",
+    "@tanstack/react-form": "^0.41.1",
     "@tanstack/react-router": "^1.85.5",
     "@tanstack/router-devtools": "^1.85.5",
+    "@tanstack/zod-form-adapter": "^0.41.1",
     "lint-staged": "^15.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hook-form": "^7.53.2",
     "zod": "^3.23.8"
   },
   "devDependencies": {
