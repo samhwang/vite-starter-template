@@ -37,7 +37,6 @@
     "@tanstack/react-router": "^1.85.5",
     "@tanstack/router-devtools": "^1.85.5",
     "@tanstack/zod-form-adapter": "^0.41.1",
-    "lint-staged": "^15.2.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zod": "^3.23.8"
@@ -58,6 +57,7 @@
     "@vitest/ui": "^2.1.8",
     "husky": "^9.1.7",
     "jsdom": "^25.0.1",
+    "lint-staged": "^15.2.10",
     "msw": "^2.6.6",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
