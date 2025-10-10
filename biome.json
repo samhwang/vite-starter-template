@@ -1,7 +1,15 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "ignore": ["src/routeTree.gen.ts", "src/**/__snapshots__", "node_modules", "dist", "coverage", "public/mockServiceWorker.js"],
+    "includes": [
+      "**",
+      "!**/src/routeTree.gen.ts",
+      "!**/src/**/__snapshots__",
+      "!**/node_modules",
+      "!**/dist",
+      "!**/coverage",
+      "!**/public/mockServiceWorker.js"
+    ],
     "ignoreUnknown": true
   },
   "linter": {
@@ -18,9 +26,7 @@
     "lineWidth": 160,
     "useEditorconfig": true
   },
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "javascript": {
     "formatter": {
       "trailingCommas": "es5",
