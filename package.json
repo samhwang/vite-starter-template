@@ -54,6 +54,7 @@
     "@vitejs/plugin-react": "^4.5.1",
     "@vitest/coverage-v8": "^3.2.0",
     "@vitest/ui": "^3.2.0",
+    "babel-plugin-react-compiler": "^1.0.0",
     "husky": "^9.1.7",
     "jsdom": "^26.1.0",
     "lint-prepush": "^3.0.2",

@@ -7,7 +7,14 @@ import { defineConfig } from 'vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), tanstackRouter()],
+  plugins: [
+    react({
+      babel: {
+        plugins: [['babel-plugin-react-compiler']],
+      },
+    }),
+    tanstackRouter(),
+  ],
   test: {
     css: true,
     globals: true,
