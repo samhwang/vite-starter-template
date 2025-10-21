@@ -1,5 +1,7 @@
 # Getting Started with Vite - React starter template
 
+> WARNING: This repo is now deprecated. Future development of these templates will be in the [starter-kit repo](https://github.com/samhwang/starter-kit)
+
 This project was bootstrapped with [Vite](https://vitejs.dev/guide/#scaffolding-your-first-vite-project), and was created
 to be very similar to Create-React-App, but faster and with batteries included!
 
